@@ -1,4 +1,4 @@
-
+# all_number 总人数 counters 排出多少个人
 
 def josephCircle(all_number,counters,q=4):
     a=[0]*all_number
