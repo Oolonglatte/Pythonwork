@@ -1,18 +1,18 @@
-class people():
+class People():
     flag=0 #是否被排出的标志位
     def __init__(self,name,id,gender):
         self.name = name
         self.id = id
         self.gender = gender
 
-sky=people('sky','2020****','男')
-csb=people('csb','2020****','男')
-yyj=people('yyj','2020****','男')
-wyk=people('wyk','2020****','男')
-hht=people('hht','2020****','男')
-wf=people('wf','2020****','男')
-cn=people('cn','2020****','男')
-hh=people('hh','2020****','男')
+sky=People('sky','2020****','男')
+csb=People('csb','2020****','男')
+yyj=People('yyj','2020****','男')
+wyk=People('wyk','2020****','男')
+hht=People('hht','2020****','男')
+wf=People('wf','2020****','男')
+cn=People('cn','2020****','男')
+hh=People('hh','2020****','男')
 
 group_list=[sky,csb,yyj,wyk,hht,wf,cn,hh]
 
@@ -46,7 +46,7 @@ def JosephCircle(group_list,counters,interval=4): # q 改为 interval 注意命�
             print(surviver.name+'幸存')
     
    
-    return 0
+    return group_list[:]
 
 
 if __name__ == '__main__':
