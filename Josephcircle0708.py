@@ -1,24 +1,24 @@
 class people():
-    flag=0
+    flag=0 #是否被排出的标志位
     def __init__(self,name,id,gender):
         self.name = name
         self.id = id
         self.gender = gender
 
-p1=people('sky','2020****','男')
-p2=people('csb','2020****','男')
-p3=people('yyj','2020****','男')
-p4=people('wyk','2020****','男')
-p5=people('hht','2020****','男')
-p6=people('wf','2020****','男')
-p7=people('cn','2020****','男')
-p8=people('hh','2020****','男')
+sky=people('sky','2020****','男')
+csb=people('csb','2020****','男')
+yyj=people('yyj','2020****','男')
+wyk=people('wyk','2020****','男')
+hht=people('hht','2020****','男')
+wf=people('wf','2020****','男')
+cn=people('cn','2020****','男')
+hh=people('hh','2020****','男')
 
-group_list=[p1,p2,p3,p4,p5,p6,p7,p8]
+group_list=[sky,csb,yyj,wyk,hht,wf,cn,hh]
 
-def add_people_to_list(p,list):
+def add_people_to_list(person,list):
     list=[]
-    list.append(p)
+    list.append(person)
     return list
 
 def JosephCircle(group_list,counters,interval=4): # q 改为 interval 注意命名规范
@@ -38,6 +38,8 @@ def JosephCircle(group_list,counters,interval=4): # q 改为 interval 注意命�
 
     #print(group_list[i].name)
 
+
+    #遍历一下找一找幸存着
     for a in range(0,len(group_list)):
         if (group_list[a].flag==0):
             surviver=group_list[a]
